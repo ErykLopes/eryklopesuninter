@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mim — Portfólio</title>
+  <meta name="description" content="CV online e portfólio (atividade prática — Fundamentos da Programação Web).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cabeçalho e navegação - replicar em todas as páginas -->
+<header class="header">
+  <div class="container nav">
+    <div class="brand">
+      <!-- DICA: use seu nome no domínio do GitHub Pages (ex.: eryklopes.github.io) -->
+      <a href="index.html" aria-label="Página inicial">Eryk Lopes • Portfólio</a>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <!-- O atributo aria-current="page" deve ser ajustado em cada página -->
+      <a href="index.html" aria-current="page">Sobre mim</a>
+      <a href="formacao.html">Formação</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="page">
+    <div class="container">
+      <h1>Olá, eu sou Eryk de Mesquita Lopes</h1>
+      <p class="lead">
+        Sou estudante de Ciência de Dados com interesse em BI, finanças e dados.
+        Busco oportunidades para aplicar análise de dados e criar soluções simples e úteis.
+      </p>
+
+      <section class="grid">
+        <article class="card" aria-labelledby="sobre-hobbies">
+          <h2 id="sobre-hobbies">Hobbies & Interesses</h2>
+          <div class="list">
+            <div>
+              <ul>
+                <li>Leitura de negócios e investimentos</li>
+                <li>Esportes e exercícios fisicos</li>
+                <li>Tecnologia e automação</li>
+                <Li>Games</Li>
+              </ul>
+            </div>
+            <div>
+              <span class="badge">Análise de Dados</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Power BI</span>
+              <span class="badge">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Pontos fortes</h2>
+          <div class="kpis">
+            <div class="kpi"><strong>+1 ano</strong><span>Estudos em Data</span></div>
+            <div class="kpi"><strong>BI</strong><span>Dashboards e KPIs</span></div>
+            <div class="kpi"><strong>SQL</strong><span>Consultas básicas</span></div>
+            <div class="kpi"><strong>Python</strong><span>Exploração de dados</span></div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="container">
+    © <span id="year"></span> Seu Nome. Todos os direitos reservados.
+    <!-- Sem JavaScript: ajuste manualmente o ano se quiser. -->
+  </div>
+</footer>
+
+</body>
+</html>

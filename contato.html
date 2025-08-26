@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato</title>
+  <meta name="description" content="Formulário de contato.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cabeçalho e navegação - replicar em todas as páginas -->
+<header class="header">
+  <div class="container nav">
+    <div class="brand">
+      <!-- DICA: use seu nome no domínio do GitHub Pages (ex.: eryklopes.github.io) -->
+      <a href="index.html" aria-label="Página inicial">Eryk Lopes • Portfólio</a>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <!-- O atributo aria-current="page" deve ser ajustado em cada página -->
+      <a href="index.html">Sobre mim</a>
+      <a href="formacao.html">Formação</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="page">
+    <div class="container">
+      <h1>Fale comigo</h1>
+      <p class="lead">Preencha o formulário abaixo para contato (exercício visual, sem envio real).</p>
+
+      <!-- Formulário apenas visual, sem JavaScript nem backend -->
+      <form class="form" action="#" method="post" aria-label="Formulário de contato (visual)">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" aria-disabled="true">Enviar (desabilitado)</button>
+        <!-- Dica: deixe o botão inativo por ser apenas visual no contexto da disciplina. -->
+      </form>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="container">
+    © <span id="year"></span> Seu Nome. Todos os direitos reservados.
+    <!-- Sem JavaScript: ajuste manualmente o ano se quiser. -->
+  </div>
+</footer>
+
+</body>
+</html>
